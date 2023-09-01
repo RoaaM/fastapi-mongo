@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "./main.py",
+            "src": "*.py",
             "use": "@vercel/python"
         }
     ],
@@ -11,10 +11,5 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ],
-    "functions": {
-        "api": {
-            "runtime": "python3.10"
-        }
-    }
+    ]
 }
